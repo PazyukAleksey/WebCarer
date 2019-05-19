@@ -1,0 +1,79 @@
+/* *********************** */
+/* **первичные настройки** */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix::after, .header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #9a9a9a;
+    /* 1rem = 16px */
+    font-size: 1rem;
+    /* 22px / 16px = 1.375rem */
+    line-height: 1.375;
+    margin: 0;
+}
+.page__cell {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+/* *********************** */
+/* ***Header настройки*** */
+.header {
+    border-bottom: 1px solid #ccc;
+    padding: 1.8rem 0;
+}
+.phone-number, .email-address {
+    text-decoration: none;
+}
+.phone-number {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.5625rem;
+}
+.email-address {
+    color: #808080
+}
+.header__logo {
+    float: left;
+}
+.header__contact {
+    float: right;
+    text-align: right;
+}
+/* *********************** */
+/* ***Menu настройки*** */
+.nav {
+    padding: 1.325rem;
+}
+.nav__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.link {
+    color: #9a9a9a;
+    text-decoration: underline;
+}
+.link:hover{
+    color: #f44336;
+    transition: 0.3s;
+}
+.nav__link {
+    text-decoration: none;
+    font-size: 1.1875rem;
+    color: #444;
+
+}
